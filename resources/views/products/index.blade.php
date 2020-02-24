@@ -10,7 +10,7 @@
           Data Products
         @endslot
         @slot('headerButton')
-          @if (auth()->user()->can('Create Products'))
+          @if (auth()->user()->can('Create Product'))
             <a href="{{route('products.create')}}" class="d-none d-sm-inline-block btn btn-sm btn-primary"><i class="fas fa-plus fa-sm"></i> Add</a>
           @endif
         @endslot
@@ -62,7 +62,7 @@
                     @endif
                   </td>
                 @endif
-              </tr> 
+              </tr>  
             @empty
               <tr>
                 <td colspan="7" class="text-center">No Data</td>
